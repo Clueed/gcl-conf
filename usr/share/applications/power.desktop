@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PowerOff
+Comment=
+Exec=/home/nelja/.config/power/power.sh
+Icon=/usr/share/icons/custom/shutdown.svg
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;Application;
+MimeType=x-scheme-handler/skype;
+X-KDE-Protocols=skype

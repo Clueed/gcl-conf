@@ -1,0 +1,29 @@
+Install following apps:
+xorg
+awesome
+fail2ban
+lm-sensor
+midori
+lxappearance
+openssh-server
+(openssh-sftp-server)
+pavucontrol
+alsa
+pulseaudio
+redshift
+skype
+trash-cli
+x11vnc
+(
+ wmctrl
+ xbacklight
+ xdg-utils
+ xdotool
+ xinput
+ xsel
+ xserver-xorg-video-intel
+ zlib1g-dev
+)
+Creating User
+
+useradd nelja

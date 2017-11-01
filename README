@@ -36,3 +36,7 @@ sudo systemctl edit getty@tty1.server
 add:	[Service]
 	ExecStart=
 	ExecStart=-/sbin/agetty -a <USERNAME> --noclear %I $TERM
+
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty -a <USERNAME> --noclear %I $TERM

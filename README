@@ -40,3 +40,7 @@ add:	[Service]
 [Service]
 ExecStart=
 ExecStart=-/sbin/agetty -a <USERNAME> --noclear %I $TERM
+
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+  exec startx
+fi

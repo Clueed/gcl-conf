@@ -1,3 +1,6 @@
+Uninstall following apps:
+snapd
+
 Install following apps:
 xorg
 awesome

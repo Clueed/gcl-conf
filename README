@@ -26,9 +26,10 @@ x11vnc
 )
 Creating User
 
-useradd nelja
+useradd nelja -m
 
 Autologin in tty1:
-[Service]
-ExecStart=
-ExecStart=-/sbin/agetty -a <USERNAME> --noclear %I $TERM
+sudo systemctl edit getty@tty1.server
+add:	[Service]
+	ExecStart=
+	ExecStart=-/sbin/agetty -a <USERNAME> --noclear %I $TERM

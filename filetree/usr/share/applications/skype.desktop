@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=Skype
-Comment=Skype Internet Telephony
 Exec=env PULSE_LATENCY_MSEC=60 skype %U
 Icon=/usr/share/icons/custom/skype.svg
 Terminal=false
@@ -8,4 +7,3 @@ Type=Application
 Encoding=UTF-8
 Categories=Network;Application;
 MimeType=x-scheme-handler/skype;
-X-KDE-Protocols=skype

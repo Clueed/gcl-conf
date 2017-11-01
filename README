@@ -27,8 +27,8 @@ x11vnc
  xserver-xorg-video-intel
  zlib1g-dev
 )
-Creating User
 
+Creating User
 useradd nelja -m
 
 Autologin in tty1:
@@ -39,3 +39,23 @@ add:	[Service]
 
 Autostart X11 on login:
 copy home/nelja/.bash_profile
+
+X11 autostart config:
+copy home/nelja/.xinitrc
+TO-DO: Correct .xinitrc inhalt
+
+Configure AwesomeWM:
+sudo apt install awesome
+copy /home/nelja/.config/awesome
+initiate by xinitrc
+
+Setup custom apps:
+.DESKTOP FILES
+copy /usr/share/application/*
+copy /usr/share/icons/custom
+PLANK
+sudo apt install plank
+copy /home/nelja/.config/plank
+copy /usr/share/plank
+initiate by xinitrc
+MIDORI

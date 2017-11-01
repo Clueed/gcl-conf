@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Internet
+MimeType=text/html;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/geo;image/svg+xml;
+Exec=midori https://e.mail.ru/messages/inbox/?back=1
+#Exec=midori -e WindowNew
+Icon=/usr/share/icons/custom/googlechrome.svg
+Terminal=false
+X-Osso-Type=application/x-executable
+X-Osso-Service=midori

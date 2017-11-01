@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Nothing
+MimeType=text/html;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/geo;image/svg+xml;
+Exec=echo "" > /dev/null 
+Icon=/usr/share/icons/custom/mail.svg
+Terminal=false
+X-Osso-Type=application/x-executable

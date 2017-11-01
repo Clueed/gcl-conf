@@ -27,3 +27,8 @@ x11vnc
 Creating User
 
 useradd nelja
+
+Autologin in tty1:
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty -a <USERNAME> --noclear %I $TERM

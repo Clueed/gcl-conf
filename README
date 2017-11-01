@@ -59,3 +59,4 @@ copy /home/nelja/.config/plank
 copy /usr/share/plank
 initiate by xinitrc
 MIDORI
+copy /home/nelja/config/CHP

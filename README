@@ -75,3 +75,5 @@ copy /etc/iptables/rules.v4
 copy /etc/network/interfaces
 static ip addr: 192.168.1.45
 Foward port 82941 (ssh) to 192.168.1.45
+
+copy /etc/hostname

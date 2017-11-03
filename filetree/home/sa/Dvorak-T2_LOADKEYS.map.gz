@@ -1,0 +1,79 @@
+# This is the German Dvorak Type 2 Layout (with slight modifications). 
+# Keymap created by Simon Spruenker (simon@spruenker.de)
+# Ver. 0.1
+# I am not sure, what I am doing. I just wanted that layout...please report errors to me. Thank you!
+
+keymaps 0-2,4-6,8-10,12
+alt_is_meta
+	altgr keycode 30 = at
+	altgr keycode 50 = mu
+include "linux-with-alt-and-altgr"
+	plain keycode  83 = KP_Comma
+#include "euro2.map"
+include "compose.latin1"
+strings as usual
+
+
+#		Normal		 Shift		AltGr		Strg
+keycode   1 =	Escape		 Escape
+keycode   2 =	one		 exclam		onesuperior
+keycode   3 =	two              quotedbl       twosuperior     nul
+keycode   4 =   three            section        threesuperior   Escape
+keycode   5 = 	four             dollar		bar
+keycode   6 = 	five		 percent	bar
+keycode	  7 = 	six		 ampersand	
+keycode	  8 = 	seven		 slash          braceleft
+keycode   9 =   eight		 parenleft      bracketleft
+keycode  10 = 	nine		 parenright     bracketright
+	control altgr keycode 10 = Control_bracketright
+keycode  11 = 	zero		 equal		braceright
+keycode  12 =	plus		 asterisk	asciitilde
+keycode  13 = 	less		 greater
+keycode  14 = 	Delete		 Delete	
+	alt     keycode  14 = Meta_Delete
+keycode  15 = 	Tab              Tab
+keycode  16 = 	+udiaeresis      +Udiaeresis
+keycode  17 = 	comma            semicolon	quotedbl
+keycode  18 = 	period           colon
+keycode  19 = 	p		 P
+keycode  20 = 	y		 Y
+keycode  21 = 	f		 F
+keycode  22 = 	g		 G
+keycode  23 = 	c		 C		copyright
+keycode  24 = 	t		 T
+keycode  25 = 	z		 Z
+keycode  26 = 	question	 ssharp
+keycode  27 = 	slash		 backslash	Meta_acute
+	shift   alt   keycode  27 = Meta_grave
+keycode  28 = 	Return
+        alt     keycode  28 = Meta_Control_m
+keycode  29 = 	Control
+keycode  30 = 	a		 A		at
+keycode	 31 = 	o		 O
+keycode	 32 = 	e		 E		currency	cent
+keycode	 33 = 	i		 I
+keycode	 34 = 	u		 U
+keycode	 35 = 	h		 H
+keycode	 36 = 	d		 D
+keycode	 37 = 	r		 R		registered
+keycode	 38 = 	n		 N
+keycode	 39 = 	s		 S
+keycode	 40 = 	l		 L		sterling
+keycode  41 = 	dead_circumflex  degree
+keycode  42 = 	Shift
+keycode  43 =	minus		 underscore
+keycode  44 = 	+odiaeresis      +Odiaeresis
+keycode	 45 = 	q		 Q		at
+keycode  46 = 	j		 J
+keycode	 47 = 	k		 K
+keycode  48 = 	x		 X
+keycode  49 = 	b		 B
+keycode  50 = 	m		 M
+keycode  51 =	w		 W
+keycode  52 = 	v		 V
+keycode  53 = 	numbersign	 apostrophe
+keycode  54 = 	Shift
+keycode  56 = 	Alt
+keycode  57 = 	space            space           Meta_space      nul
+keycode  58 = 	Caps_Lock
+keycode  86 = 	+adiaeresis      +Adiaeresis

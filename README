@@ -60,3 +60,10 @@ copy /usr/share/plank
 initiate by xinitrc
 MIDORI
 copy /home/nelja/config/CHP
+
+
+System Configuration:
+sudo apt install openssh-server
+systemctl enable sshd
+sudo apt install iptables-persistent 
+TODO check if iptables-persistant neccesarry

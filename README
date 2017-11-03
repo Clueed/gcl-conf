@@ -65,5 +65,6 @@ copy /home/nelja/config/CHP
 System Configuration:
 sudo apt install openssh-server
 systemctl enable sshd
+new ssh port: 
 sudo apt install iptables-persistent 
 TODO check if iptables-persistant neccesarry

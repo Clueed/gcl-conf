@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Skype
-Exec=env PULSE_LATENCY_MSEC=60 skype %U
+Exec=skypeforlinux
 Icon=/usr/share/icons/custom/skype.svg
 Terminal=false
 Type=Application

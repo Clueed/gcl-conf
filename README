@@ -78,3 +78,12 @@ Foward port 82941 (ssh) to 192.168.1.45
 copy /etc/hostname
 
 apt install lxappearanc
+
+apt install big-cursor
+
+/etc/apt/source.list -> enable "partner" repository
+apt install skype alsa-base pulseaudio pavucontrol
+wget https://repo.skype.com/latest/skypeforlinux-64.deb
+sudo dpkg -i skypeforlinux-64.deb
+sudo apt install -f
+sudo dpkg -i skypeforlinux-64.deb

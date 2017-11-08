@@ -68,12 +68,20 @@ systemctl enable sshd
 new ssh port: 82941
 copy /etc/ssh/sshd_config
 
-sudo apt install iptables-persistent 
-copy /etc/iptables/rules.v4
+#sudo apt install iptables-persistent 
+#copy /etc/iptables/rules.v4
+sudo apt install ufw
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 60259 (SSH NEW)
+sudo ufw allow 62235 (vnc)
+sudo ufw allow 80
+sudo ufw allow 443
+
 
 copy /etc/network/interfaces
 static ip addr: 192.168.1.45
-Foward port 82941 (ssh) to 192.168.1.45
+Foward port 60259 (ssh) to 192.168.1.45
 
 copy /etc/hostname
 
@@ -90,3 +98,14 @@ sudo dpkg -i skypeforlinux-64.deb
 
 sudo apt install feh
 copy /home/nelja/.config/wallpaper
+
+sudo apt install gnome-accessibility-themes
+
+
+sudo apt-get -o Dpkg::Options::=--force-confmiss install --reinstall <package-name>
+sudo apt install libpam-google-authenticator
+copy /etc/pam.d/sshd
+
+cp home/nelja/.config/systemns.sh
+NELJA: crontab -e
+	*/15 * * * * /home/nelja/.config/systemns.sh

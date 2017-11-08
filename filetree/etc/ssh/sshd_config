@@ -2,7 +2,7 @@
 # See the sshd_config(5) manpage for details
 
 # What ports, IPs and protocols we listen for
-Port 82941
+Port 60259
 # Use these options to restrict which interfaces/protocols sshd will bind to
 #ListenAddress ::
 #ListenAddress 0.0.0.0
@@ -46,7 +46,7 @@ PermitEmptyPasswords no
 
 # Change to yes to enable challenge-response passwords (beware issues with
 # some PAM modules and threads)
-ChallengeResponseAuthentication no
+ChallengeResponseAuthentication yes
 
 # Change to no to disable tunnelled clear text passwords
 #PasswordAuthentication yes
@@ -86,3 +86,8 @@ Subsystem sftp /usr/lib/openssh/sftp-server
 # PAM authentication, then enable this but set PasswordAuthentication
 # and ChallengeResponseAuthentication to 'no'.
 UsePAM yes
+
+AuthenticationMethods keyboard-interactive publickey password
+
+Match User nelja
+	PasswordAuthentication no
